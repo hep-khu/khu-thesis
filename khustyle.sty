@@ -1,11 +1,11 @@
-\ProvidesPackage{khystyle}
+\ProvidesPackage{khystyle}[2022/12/30 Kyung Hee University Template package]
 
-\RequirePackage[paperwidth=19.cm,paperheight=26.0cm,
-                left=2.cm,right=2.cm,top=2.5cm,bottom=2.5cm]{geometry}
-\RequirePackage{setspace}
-\RequirePackage{amsmath, amssymb, amsfonts}
-
-\bibliographystyle{unsrt}
+%% Commands to be used in the front pages, etc
+%%%% \department{Name of your department}
+%%%% \advisor{Name of your advisor}
+%%%% \degree{Title of the Degree, Ph.D or Master}
+%%%% \keyword{keyword to be placed after the abstract}
+%%%% \committee{Name of thesis committee, call this command multiple times with different names}
 
 \newcommand{\department}[1]{\def\khudept{#1}}
 \newcommand{\advisor}[1]{\def\khuadvisor{#1}}
@@ -27,6 +27,15 @@
 }
 \ExplSyntaxOff
 
+%% Common packages and setup
+\RequirePackage{amsmath, amssymb, amsfonts}
+
+\bibliographystyle{unsrt}
+
+%% Setup for the geometry
+\RequirePackage[paperwidth=19.cm,paperheight=26.0cm,
+                left=2.cm,right=2.cm,top=2.5cm,bottom=2.5cm]{geometry}
+\RequirePackage{setspace}
 
 \newcommand{\makeoutcover}{
     \newpage
