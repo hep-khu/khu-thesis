@@ -3,22 +3,25 @@
 
 %vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv%
 \title{\LaTeX Template to write your Ph.D thesis or Master thesis at the Kyung Hee University}
+
 \author{Frodo Baggins}
 %\advisor{Prof. Albert Einstein}
 \advisor{Prof. Gandalf Grey\\and\\ Prof. Saruman White}
+\committee{Gimli Dwarves}
+\committee{Legolas Elves}
+\committee{Aragorn Strider}
+%\committee{Boromir Gondor}
+%\committee{Sauron D. Lord}
+
 \degree{Master of Science}
 %\degree{Doctor of Philosophy}
 \department{Department of Everything}
 \date{February, 2023}
+
 \keywords{Kyung Hee University, LaTex template, How-to}
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^%
 
 \begin{document}
-\committee{Gimli Dwarves}
-\committee{Legolas Elves}
-\committee{Aragorn Strider}
-\committee{Boromir Gondor}
-\committee{Sauron D. Lord}
 %\def\nofigure{1} % if you want to hide list of figures or don't have any figure
 %\def\notable{1} % if you want to hide list of tables or don't have any table
 \makefrontmatters
@@ -29,7 +32,10 @@ A Ph.D thesis or Master thesis can be written with \LaTeX. There can be some tem
 
 %vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv%
 \section{Introduction}
-
+Writing a thesis is can be painful. You have to start from preparing well-defined \LaTeX template to start from. One of the choices can be copying entire contents from your colleagues and edit .tex files. This is usually working, but it is error-proune task. Maybe you forget to change the date, name of advisor, or even your name. The \TeX system is not designed to work in that way, one can prepare a well-formed style files which focuses on the design \cite{texbook,latex:companion,latex2e,knuth:1984,lesk:1977}. What you have to do is focus on the contents.
 %^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^%
+
+\newpage
+\bibliography{reference}
 
 \end{document}
